@@ -1,0 +1,15 @@
+<style>
+ body{
+     background:yellow;
+ }
+</style>
+
+<h1>Hello i am a window 2...</h1>
+<div id="message"></div>
+
+<script>
+    var message = document.getElementById("message");
+    window.writeMessage = function writeMessage(){
+        message.innerHTML += "<br>Focused... This script running from parent.."
+    }
+</script>
